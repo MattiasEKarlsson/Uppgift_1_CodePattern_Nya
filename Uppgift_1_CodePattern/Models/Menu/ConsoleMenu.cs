@@ -88,15 +88,19 @@ namespace Uppgift_1_CodePattern.Models
                             pets.Add(_createPet.CreatePet(customers));
                             break;
                         case "8":
-                        _extrasToPet.LinkExtra(pets, extras);
-                        //pets[0].Extras = new List<IExtras>();
-                        //pets[0].Extras.Add(extras[0]);
-                        //foreach (var item in pets[0].Extras)
-                        //{
-                        //    Console.WriteLine(item.Name);
-                        //}
-                        
-                           break;
+                        Console.Clear();
+                        var pet = _extrasToPet.GetPetInput(pets);
+                        if (pet!=null)
+                        {
+                            var extra = _extrasToPet.GetExtraInput(extras);
+                            if (pet.Extras == null)
+                            {
+                                pet.Extras = new List<IExtras>();
+                            }
+                            pet.Extras.Add(extra);
+                        }
+
+                        break;
                        case "0":
                             Environment.Exit(0);
                             break;

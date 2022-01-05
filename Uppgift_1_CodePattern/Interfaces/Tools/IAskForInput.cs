@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Uppgift_1_CodePattern.Interfaces.Tools
 {
-    internal interface IAskForInput
+    public interface IAskForInput
     {
         string AskForInput(string input, int inputLenth);
     }

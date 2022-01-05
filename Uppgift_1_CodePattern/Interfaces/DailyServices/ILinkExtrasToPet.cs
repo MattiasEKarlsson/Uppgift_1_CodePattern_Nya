@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Uppgift_1_CodePattern.Models.DailyServices;
 
 namespace Uppgift_1_CodePattern.Interfaces.DailyServices
 {
     public interface ILinkExtrasToPet
     {
-        void LinkExtra(List<IPet> pets, List<IExtras> extras);
+        IPet GetPetInput(List<IPet> pets);
+        IExtras GetExtraInput(List<IExtras> extras);
+
     }
 }

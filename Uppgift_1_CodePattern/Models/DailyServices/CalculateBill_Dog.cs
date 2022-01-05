@@ -21,6 +21,15 @@ namespace Uppgift_1_CodePattern.Models.DailyManagment
         public void CalcTotal(IPet pet)
         {
             int total = StaticDetails.PricePerAnimal;
+            if (pet.Extras != null)
+            {
+                foreach (var extra in pet.Extras)
+                {
+                    total = total + extra.Price;
+                    Console.WriteLine($"{extra.Name}: {extra.Price}KR");
+                }
+                pet.Extras.Clear();
+            }
 
             Console.WriteLine($"Daily stay: {StaticDetails.PricePerAnimal} kr");
            

@@ -15,7 +15,8 @@ namespace Uppgift_1_CodePattern.Models.InitLists
             List<IExtras> extras = new List<IExtras>
             {
                 new Extras{Id = 1, Name = "Wash", Price = 150},
-                new Extras{Id = 2, Name = "Claw Trimming", Price = 200 }
+                new Extras{Id = 2, Name = "Claw Trimming", Price = 200 },
+                new Extras{Id = 3, Name = "BastuBad", Price = 200 }
             };
             return extras;
         }

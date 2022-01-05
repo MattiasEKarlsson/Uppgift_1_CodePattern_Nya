@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Uppgift_1_CodePattern.Interfaces.Tools
 {
-    internal interface ITools
+    public interface ITools
     {
         void ConfirmAndClearConsol(string message);
         void ErrorMessageConsol(string message);

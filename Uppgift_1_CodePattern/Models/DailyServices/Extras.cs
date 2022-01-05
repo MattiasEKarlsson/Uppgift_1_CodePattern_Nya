@@ -7,7 +7,7 @@ using Uppgift_1_CodePattern.Interfaces.DailyServices;
 
 namespace Uppgift_1_CodePattern.Models.DailyServices
 {
-    internal class Extras : IExtras
+    public class Extras : IExtras
     {
         public int Id { get; set; }
         public string Name { get; set; }
