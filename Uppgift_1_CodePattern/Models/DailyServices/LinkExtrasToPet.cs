@@ -31,10 +31,11 @@ namespace Uppgift_1_CodePattern.Models.DailyServices
             }
             else
             {
-                _tools.ErrorMessageConsol("Pets not here");
+                _tools.ErrorMessageConsol("Pet not found!");
                 return null;
             }
         }
+
         public IExtras GetExtraInput(List<IExtras> extras)
         {
             foreach (var extra in extras)

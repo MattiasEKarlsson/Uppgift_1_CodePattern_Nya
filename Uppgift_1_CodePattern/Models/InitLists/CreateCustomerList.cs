@@ -14,7 +14,7 @@ namespace Uppgift_1_CodePattern.Models.InitLists
         {
             List<ICustomer> customers = new List<ICustomer>
         {
-              new Owner { FirstName="Gustaf", LastName="Larsson", PhoneNumber="1111", Email="a@a.com" },
+              //new Owner { FirstName="Gustaf", LastName="Larsson", PhoneNumber="1111", Email="a@a.com" },
               //new Owner { FirstName="Sven", LastName="Karlsson", PhoneNumber="2222", Email="b@a.com"  },
               //new Owner { FirstName="Adolf", LastName="Andersson", PhoneNumber="3333", Email="c@a.com"},
               //new Owner{ FirstName="Karl", LastName="Gustafsson", PhoneNumber="4444", Email="d@a.com" },

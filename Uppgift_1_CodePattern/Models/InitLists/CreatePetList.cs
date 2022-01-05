@@ -14,7 +14,7 @@ namespace Uppgift_1_CodePattern.Models.InitLists
         {
             List<IPet> pets = new List<IPet>
         {
-              new Pet { Name="Fido", Owner = customer[0]},
+              //new Pet { Name="Fido", Owner = customer[0]},
               //new Dog { Name="Ludde", Owner= customer[1], AtKennel=true },
               //new Dog { Name="Max", Owner= customer[2]  },
               //new Dog { Name="Sigge", Owner= customer[3], AtKennel=true   },
